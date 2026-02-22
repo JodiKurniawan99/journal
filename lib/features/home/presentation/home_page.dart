@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../data/home_repository.dart';
 import '../domain/models/home_dashboard_model.dart';
 import '../domain/models/journal_model.dart';
-import 'add_journal_page.dart';
+import '../../add_journal/add_journal_page.dart';
 import 'extensions/home_context_extensions.dart';
 import 'widgets/journal_card.dart';
 import 'widgets/stats_card.dart';
