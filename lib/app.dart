@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'routes/app_router.dart';
 
 class MyApp extends StatelessWidget {
@@ -8,12 +7,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      title: 'Trading Journal',
+      title: 'Flutter Clean Starter',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
-        useMaterial3: true,
-      ),
       routerConfig: appRouter,
     );
   }
