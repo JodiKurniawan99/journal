@@ -1,4 +1,4 @@
-import 'journal_model.dart';
+import '../../../home/domain/models/journal_model.dart';
 
 class HomeDashboardModel {
   const HomeDashboardModel({

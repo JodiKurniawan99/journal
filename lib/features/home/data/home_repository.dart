@@ -1,4 +1,4 @@
-import '../domain/models/home_dashboard_model.dart';
+import '../../add_journal/domain/models/home_dashboard_model.dart';
 import '../domain/models/journal_model.dart';
 
 abstract interface class HomeRepository {
