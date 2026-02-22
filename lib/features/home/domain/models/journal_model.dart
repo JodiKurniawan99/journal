@@ -2,6 +2,18 @@ import 'package:flutter/material.dart';
 
 enum TradeType { buy, sell }
 
+enum TradeEmotion {
+  confident('Confident', '😎'),
+  fear('Fear', '😨'),
+  greedy('Greedy', '🤑'),
+  calm('Calm', '😌');
+
+  const TradeEmotion(this.label, this.emoji);
+
+  final String label;
+  final String emoji;
+}
+
 class JournalModel {
   const JournalModel({
     required this.pair,
@@ -10,8 +22,10 @@ class JournalModel {
     required this.exitPrice,
     required this.date,
     required this.riskRewardRatio,
-    required this.emotionEmoji,
+    required this.emotionBeforeTrade,
+    required this.emotionAfterTrade,
     required this.profitLoss,
+    this.lotSize,
   });
 
   final String pair;
@@ -20,7 +34,9 @@ class JournalModel {
   final double exitPrice;
   final DateTime date;
   final double riskRewardRatio;
-  final String emotionEmoji;
+  final double? lotSize;
+  final TradeEmotion emotionBeforeTrade;
+  final TradeEmotion emotionAfterTrade;
   final double profitLoss;
 
   bool get isProfit => profitLoss >= 0;
@@ -47,4 +63,6 @@ class JournalModel {
         return Icons.arrow_downward_rounded;
     }
   }
+
+  String get emotionEmoji => emotionAfterTrade.emoji;
 }

@@ -29,7 +29,8 @@ const List<JournalModel> _mockJournals = [
     exitPrice: 65380.20,
     date: DateTime(2026, 1, 12),
     riskRewardRatio: 2.4,
-    emotionEmoji: '😌',
+    emotionBeforeTrade: TradeEmotion.calm,
+    emotionAfterTrade: TradeEmotion.calm,
     profitLoss: 510.32,
   ),
   JournalModel(
@@ -39,7 +40,8 @@ const List<JournalModel> _mockJournals = [
     exitPrice: 3306.50,
     date: DateTime(2026, 1, 10),
     riskRewardRatio: 1.8,
-    emotionEmoji: '😬',
+    emotionBeforeTrade: TradeEmotion.fear,
+    emotionAfterTrade: TradeEmotion.fear,
     profitLoss: -220.15,
   ),
   JournalModel(
@@ -49,7 +51,8 @@ const List<JournalModel> _mockJournals = [
     exitPrice: 146.30,
     date: DateTime(2026, 1, 8),
     riskRewardRatio: 3.1,
-    emotionEmoji: '🔥',
+    emotionBeforeTrade: TradeEmotion.confident,
+    emotionAfterTrade: TradeEmotion.greedy,
     profitLoss: 305.75,
   ),
 ];
