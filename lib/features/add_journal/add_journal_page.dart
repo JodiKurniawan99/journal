@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../domain/models/journal_model.dart';
+import '../home/domain/models/journal_model.dart';
 
 class AddJournalPage extends StatefulWidget {
   const AddJournalPage({super.key});
