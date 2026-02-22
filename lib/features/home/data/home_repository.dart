@@ -12,7 +12,7 @@ final class MockHomeRepository implements HomeRepository {
 
   @override
   HomeDashboardModel getDashboard() {
-    return const HomeDashboardModel(
+    return HomeDashboardModel(
       totalTrades: 148,
       winRate: 62.4,
       netProfit: 4870.50,
@@ -21,7 +21,7 @@ final class MockHomeRepository implements HomeRepository {
   }
 }
 
-const List<JournalModel> _mockJournals = [
+final List<JournalModel> _mockJournals = [
   JournalModel(
     pair: 'BTC/USDT',
     tradeType: TradeType.buy,
